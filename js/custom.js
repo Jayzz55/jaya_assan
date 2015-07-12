@@ -194,5 +194,22 @@ $(document).ready(function () {
     });
 });
 
+ //Search         
+    (function () {
+
+        $('.top-search').on('click', function() {
+            $('.search').fadeIn(500, function() {
+              $(this).toggleClass('search-toggle');
+            });     
+        });
+
+        $('.search-close').on('click', function() {
+            $('.search').fadeOut(500, function() {
+                $(this).removeClass('search-toggle');
+            }); 
+        });
+
+    }());
+
 
 

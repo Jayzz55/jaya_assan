@@ -2,7 +2,7 @@
     Document   : assan
     Author     : Design_mylife
     Description:assan multi-page for Multipurpose use
-    Version    : V1.6
+    Version    : V1.7.5
 */
 @import "http://fonts.googleapis.com/css?family=Raleway:400,800,700,600,500";
 body {
@@ -387,7 +387,7 @@ p.sub-text {
   font-size: 13px;
   letter-spacing: 0px;
   text-transform: uppercase;
-  font-family: 'Raleway', sans-serif; }
+  font-family: "Raleway", sans-serif; }
 
 .navbar-default .navbar-nav > li > a:hover {
   color: #4f82e9; }
@@ -548,6 +548,46 @@ TOP BARS
 
 .top-dark-right li a:hover {
   color: #fff; }
+
+/***search top bar**/
+.topbar-icons {
+  display: block; }
+
+.topbar-icons i {
+  margin: 0px !important;
+  display: block; }
+
+.search {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 15px;
+  top: 0;
+  height: 100%;
+  z-index: 99999; }
+
+.search .form-control {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 99%;
+  right: 0;
+  border: 0px;
+  background-color: #fff;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  border-radius: 0px; }
+
+.search-close {
+  position: absolute;
+  right: 9px;
+  top: 5px;
+  cursor: pointer; }
 
 /* Mega MENU */
 .yamm-content {
@@ -2936,7 +2976,6 @@ label span {
 /*****************home ********
 ******************************/
 #video-wrap {
-  background-color: #444;
   display: table;
   width: 100%;
   height: 580px;
@@ -2944,6 +2983,13 @@ label span {
   overflow-y: hidden;
   vertical-align: middle;
   z-index: 1; }
+
+.fallback-image {
+  background-image: url(../img/showcase-5.jpg);
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 /*.parallax-overlay{
     position: absolute;
